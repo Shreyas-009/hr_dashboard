@@ -1,0 +1,168 @@
+.scheduleContainer {
+    background: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E0E0E0;
+    overflow: hidden;
+    position: relative;
+}
+
+.scheduleHeader {
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #161E54;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.dateSelector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #637381;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #EFEFEF;
+    padding: 3px 6px;
+}
+
+.scheduleContent {
+    display: flex;
+    flex-direction: column;
+    max-height: 320px;
+    overflow: hidden;
+    gap: 0px;
+}
+
+.scheduleSection {
+    margin-bottom: 16px;
+}
+
+.sectionTitle {
+    font-size: 14px;
+    font-weight: 500;
+    color: #637381;
+    margin: 0 0 8px 0;
+}
+
+.scheduleItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: 0.5px solid #E0E0E0;
+    background: #FAFAFA;
+    margin-bottom: 8px;
+}
+
+.scheduleItemContent {
+    flex: 1;
+}
+
+.scheduleItemTitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #212B36;
+    margin-bottom: 4px;
+    line-height: 1.5;
+}
+
+.scheduleItemTime {
+    font-size: 10px;
+    color: #637381;
+}
+
+.menuButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.menuButton:hover {
+    opacity: 1;
+}
+
+.footer {
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 39px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 10px 10px;
+    border-top: 1px solid #E0E0E0;
+    background: #FFF;
+}
+
+.createButton {
+    background: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FF5151;
+    cursor: pointer;
+}
+
+.createButton:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 834px) {
+
+    .scheduleContainer {
+        width: 374px;
+    }
+
+
+    .scheduleContent {
+        max-height: 210px;
+    }
+
+    .scheduleItemTime {
+        width: fit-content;
+    }
+
+    .scheduleItemTitle {
+        width: fit-content;
+    }
+
+}
+
+
+@media (max-width: 390px) {
+    .scheduleContainer {
+        width: 100%;
+    }
+
+    .scheduleContent {
+        max-height: 380px;
+    }
+
+}

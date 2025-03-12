@@ -1,0 +1,140 @@
+.navbar {
+    height: 64px;
+    background: #FFFFFF;
+    padding: 24px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.divider {
+    border: 0.9px solid #F3F3F3;
+    width: 96%;
+    margin-left: 4%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-box {
+    position: relative;
+    width: 380px;
+}
+
+.search-input {
+    width: 100%;
+    height: 40px;
+    background: #F9FAFB;
+    border: 1px solid #DFE3E8;
+    border-radius: 8px;
+    padding: 0 40px 0 16px;
+    font-size: 14px;
+    color: #212B36;
+}
+
+.search-input::placeholder {
+    color: #919EAB;
+}
+
+.search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.notification-icon,
+.message-icon {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-icon:hover,
+.message-icon:hover {
+    opacity: 1;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #212B36;
+}
+
+.burger-menu {
+    display: none;
+}
+
+@media (max-width: 834px) {
+
+    .navbar {
+        height: 64px;
+        background: #FFFFFF;
+        padding-left: 13px;
+    }
+
+    .user-name {
+        display: none;
+    }
+
+    .avatar {
+        width: 36px;
+        height: 36px;
+    }
+
+    .burger-menu {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+
+
+}
+
+@media (max-width: 390px) {
+    .navbar {
+       padding: 20px 18px;
+    }
+}
+
+

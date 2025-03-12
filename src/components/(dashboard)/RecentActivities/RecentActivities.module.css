@@ -1,0 +1,178 @@
+.activitiesContainer {
+    border-radius: 16px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    height: 258px;
+    overflow: hidden;
+    background: #161E54;
+}
+
+.title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.activitiesHeader {
+    display: flex;
+    padding: 10px 10px 10px 24px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px 10px 0px 0px;
+    background: #1B204A;
+}
+
+
+.activities {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background: #121843;
+}
+
+.activityContent {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.timeStamp {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.6;
+}
+
+.activityTitle {
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.activityDescription {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: 0.6;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.activityCount {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.seeAllButton {
+    padding: 10px 16px;
+    border-radius: 4px;
+    background: #FF5151;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    color: #FFF;
+    border: none;
+}
+
+.seeAllButton:hover {
+    background-color: #E64646;
+}
+
+
+@media (max-width: 834px) {
+    .activitiesContainer {
+        width: 250px;
+        height: fit-content;
+    }
+
+    .activitiesHeader {
+        padding: 10px 10px 10px 20px;
+    }
+
+    .activities {
+        gap: 31px;
+    }
+
+    .timeStamp {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .activityTitle {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .activityDescription {
+        font-family: Roboto;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .activityContent {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px
+    }
+
+
+}
+
+
+@media (max-width: 390px) {
+    .activitiesContainer {
+        width: 100%;
+    }
+
+    .title{
+        font-size: 16px;
+    }
+
+    .activityDescription{
+        font-size: 14px;
+    }
+
+    .seeAllButton{
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+    
+}
+

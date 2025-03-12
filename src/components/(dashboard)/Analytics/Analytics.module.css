@@ -1,0 +1,208 @@
+.analyticsContainer {
+    /* width: 640px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.statsGrid {
+    display: flex;
+    gap: 14px;
+    justify-content: space-between;
+}
+
+.statsCard {
+    flex: 1;
+    padding: 12px 12px 12px 20px;
+    border-radius: 10px;
+    /* min-width: 200px; */
+    width: 200px;
+    min-width: 100px;
+    max-width: 200px;
+}
+
+.statsCard.orange {
+    background: #FFEFE7;
+    color: #FF5151;
+    width: fit-content;
+    word-wrap: nowrap;
+}
+
+.statsCard.blue {
+    background: #E8F0FB;
+    color: #3786F1;
+    width: fit-content;
+    word-wrap: nowrap;
+}
+
+.statsCard.purple {
+    background: #FDEBF9;
+    color: #EE61CF;
+    width: fit-content;
+    word-wrap: nowrap;
+}
+
+.statsContent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.statsLabel {
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    color: #161E54;
+    width: fit-content;
+    word-wrap: nowrap;
+}
+
+.statsNumber {
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    color: #161E54;
+    width: fit-content;
+    word-wrap: nowrap;
+}
+
+.statsSubtext {
+    /* font-family: Roboto; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FF5151;
+    width: fit-content;
+    word-wrap: nowrap;
+}
+
+.subtext {
+    width: fit-content;
+    word-wrap: nowrap;
+}
+
+.metricsGrid {
+    display: flex;
+    gap: 16px;
+}
+
+.metricCard {
+    flex: 1;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.metricHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.metricContent {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.metricTitle {
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    color: #161E54;
+    width: fit-content;
+    word-wrap: nowrap;
+}
+
+.metricNumber {
+    font-size: 48px;
+    font-weight: 600;
+    color: #212B36;
+    margin-bottom: 8px;
+    width: fit-content;
+    word-wrap: nowrap;
+}
+
+.metricDetails {
+    display: flex;
+    flex-direction: column;
+    color: #637381;
+    /* font-family: Roboto; */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 18px;
+    width: fit-content;
+    word-wrap: nowrap;
+}
+
+.trendIndicator {
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+}
+
+.trendGraph {
+    width: 120px;
+    height: 60px;
+    margin: auto;
+}
+
+.trendValue {
+    background: #FFF5F5;
+    display: flex;
+    padding: 4px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 200;
+    border-radius: 4px;
+}
+
+
+@media (max-width: 390px) {
+    .statsGrid {
+        flex-direction: column;
+    }
+
+    .statsCard {
+        width: 100%;
+        background-color: red;
+    }
+
+    .statsCard.orange {
+        width: 100%;
+        flex: 1;
+    }
+
+    .statsCard.blue {
+        width: 100%;
+    }
+
+    .statsCard.purple {
+        width: 100%;
+    }
+
+    .statsCard {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .metricsGrid {
+        flex-direction: column;
+    }
+
+    .metricCard {
+        width: 100%;
+    }
+}
