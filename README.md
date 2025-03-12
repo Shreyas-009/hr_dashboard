@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HR Dashboard
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project features a dynamic and responsive HR dashboard designed for easy analysis of the recruitment process. The dashboard includes reactive graphs that provide insights into various HR metrics, making it easier for HR professionals to track and analyze recruitment data.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Dynamic Data**: The dashboard updates in real-time, reflecting changes in recruitment metrics.
+- **Responsive Design**: The layout adapts to different screen sizes, ensuring usability on both desktop and mobile devices.
+- **Interactive Graphs**: Utilizes Recharts for smooth and interactive graphs that visualize key HR metrics.
+- **User-Friendly Interface**: Intuitive design for easy navigation and data interpretation.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **React**: For building the user interface.
+- **Recharts**: For creating responsive and interactive charts.
+- **CSS Modules**: For styling components with scoped CSS.
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/yourusername/hr-dashboard.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Navigate to the project directory:
 
-## Deploy on Vercel
+   ```bash
+   cd hr-dashboard
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Install the dependencies:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+5. Open your browser and go to `http://localhost:3000`.
+
+## Usage
+
+- The dashboard displays various HR metrics, including total employees, job openings, and recruitment trends.
+- Hover over the graphs to view detailed values and trends.
+- The layout is responsive, ensuring a seamless experience on different devices.
